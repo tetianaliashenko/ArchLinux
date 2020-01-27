@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ArchLinux: Главная</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="preload" href="fonts/montserratblack.woff2" as="font">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+</head>
+
+<body class="body">
+  <div class="body__wrapper body__wrapper--shadow">
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo.png" alt="Логотип компании ArchLinux" width="220"
+          height="65">
+      </a>
+      <button class="page-header__toggle">
+        <img class="toogle__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="50" height="50">
+      </button>
+      <div class="manager-top page-header__manager page-header__manager--closed">
+        <h2 class="manager-top__title">Ваш будущий менеджер проектов</h2>
+        <p class="manager-top__text">Знакомьтесь</p>
+        <img class="manager-top__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="170"
+          height="170">
+        <p class="manager-top__name">Дмитрий Тищенко</p>
+      </div>
+    </header>
+
+    <main class="page-main page-main--background">
+      <h1 class="page-main__title main-title">Узнайте стоимость проекта онлайн</h1>
+      <div class="page-main__test test">
+        <p class="test__text">Пройдите тест для расчета предварительной стоимости проекта</p>
+        <a class="test__button button" href="choice.html">Начать тест</a>
+        <script>
+          $(".test__button").click(function () {
+            $("html, body").slideToggle("slow", { direction: "left" });
+          });
+        </script>
+      </div>
+    </main>
+  </div>
+
+  <div class="manager manager--desktop">
+    <h2 class="manager__title">Ваш будущий менеджер проектов</h2>
+    <p class="manager__text">Знакомьтесь</p>
+    <img class="manager__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="170" height="170">
+    <p class="manager__name">Дмитрий Тищенко</p>
+  </div>
+
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/mobile-manager.js"></script>
+</body>
+
+</html>

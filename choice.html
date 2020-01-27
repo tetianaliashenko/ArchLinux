@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ArchLinux: Выбор типа сайта</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="preload" href="fonts/montserratblack.woff2" as="font">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+</head>
+
+<body class="body body--background">
+  <div class="body__wrapper">
+    <header class="page-header page-header--border">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo.png" alt="Логотип компании ArchLinux" width="220" height="65">
+      </a>
+      <button class="page-header__toggle">
+        <img class="toogle__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="50" height="50">
+      </button>
+      <div class="manager-top page-header__manager page-header__manager--closed">
+        <h2 class="manager-top__title">Ваш будущий менеджер проектов</h2>
+        <p class="manager-top__text">Знакомьтесь</p>
+        <img class="manager-top__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="170" height="170">
+        <p class="manager-top__name">Дмитрий Тищенко</p>
+      </div>
+      <h1 class="page-header__title">Выберите тип сайта:</h1>
+    </header>
+
+    <main class="page-main page-main--without-background">
+      <ul class="page-main__list list">
+        <li class="list__item">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--landing" width="90" height="85">
+              <use xlink:href="img/sprite.svg#landing-pages"></use>
+            </svg>
+            <p class="list__text list__text--landing">Landing pages</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--card" width="80" height="75">
+              <use xlink:href="img/sprite.svg#site-card"></use>
+            </svg>
+            <p class="list__text list__text--card">Cайт визитка</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--corporative" width="85" height="85">
+              <use xlink:href="img/sprite.svg#corporate-site"></use>
+            </svg>
+            <p class="list__text list__text--corporative">Корпоративный сайт</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--promo" width="90" height="90">
+              <use xlink:href="img/sprite.svg#megaphone"></use>
+            </svg>
+            <p class="list__text list__text--promo">Промо сайт</p>
+          </a>
+        </li>
+        <li class="list__item list__item--margin">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--shop" width="85" height="60">
+              <use xlink:href="img/sprite.svg#e-shop"></use>
+            </svg>
+            <p class="list__text list__text--shop">Интеренет магазин</p>
+          </a>
+        </li>
+        <li class="list__item list__item--margin">
+          <a class="list__link" href="form.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--attachment" width="85" height="85">
+              <use xlink:href="img/sprite.svg#service"></use>
+            </svg>
+            <p class="list__text list__text--attachment">Сервисное приложение</p>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <div class="manager manager--desktop">
+    <h2 class="manager__title">Ваш будущий менеджер проектов</h2>
+    <p class="manager__text">Знакомьтесь</p>
+    <img class="manager__image" src="img/manager.png" alt="Менеджер проектов Дмитрий Тищенко" width="170" height="170">
+    <p class="manager__name">Дмитрий Тищенко</p>
+  </div>
+
+  <script src="js/mobile-manager.js"></script>
+</body>
+
+</html>
